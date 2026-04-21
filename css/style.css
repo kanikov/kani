@@ -1,0 +1,69 @@
+/* Global styles that apply to all pages */
+:root {
+  --primary: #b47c5e;
+  --dark: #2a241f;
+  --light: #f9f5f0;
+  --accent: #9f755c;
+  --glass: rgba(255, 255, 255, 0.6);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(145deg, #f9f5f0 0%, #e8e2da 100%);
+  min-height: 100vh;
+  color: #1e1e1e;
+  line-height: 1.6;
+}
+
+/* Navigation - consistent across all pages */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3rem;
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--primary);
+}
+
+/* Container for content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Footer - consistent across pages */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--glass);
+  backdrop-filter: blur(8px);
+  margin-top: 4rem;
+}
