@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Downloads · NEBULA GEAR</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    .download-hero {
+      text-align: center;
+      padding: 3rem;
+      background: var(--glass);
+      border-radius: 30px;
+      margin-bottom: 3rem;
+    }
+    
+    .download-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+    
+    .download-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5rem;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 15px;
+      transition: var(--transition);
+    }
+    
+    .download-item:hover {
+      border-color: var(--primary);
+      transform: translateX(10px);
+      box-shadow: var(--glow);
+    }
+    
+    .download-info {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    
+    .download-info i {
+      font-size: 2rem;
+      color: var(--primary);
+    }
+    
+    .version {
+      color: var(--secondary);
+      font-size: 0.9rem;
+    }
+    
+    .download-actions {
+      display: flex;
+      gap: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-gamepad"></i>
+        <span>NEBULA GEAR</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="downloads.html" class="active">Downloads</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="download-hero" data-aos="fade-down">
+      <h1 class="gradient-text" style="font-size: 3rem; margin-bottom: 1rem;">Download Center</h1>
+      <p>Get the latest gaming accessories, mods, and tools</p>
+    </div>
+
+    <div class="download-list">
+      <div class="download-item" data-aos="fade-right">
+        <div class="download-info">
+          <i class="fas fa-cube"></i>
+          <div>
+            <h3>Nebula Mouse Driver v2.1</h3>
+            <p>Latest drivers for Nebula X1 series</p>
+            <span class="version">Windows 10/11 · 45 MB</span>
+          </div>
+        </div>
+        <div class="download-actions">
+          <button class="download-btn"><i class="fas fa-download"></i> Download</button>
+        </div>
+      </div>
+
+      <div class="download-item" data-aos="fade-right" data-aos-delay="100">
+        <div class="download-info">
+          <i class="fas fa-sliders-h"></i>
+          <div>
+            <h3>RGB Control Suite</h3>
+            <p>Universal RGB synchronization software</p>
+            <span class="version">v3.0.2 · 128 MB</span>
+          </div>
+        </div>
+        <div class="download-actions">
+          <button class="download-btn"><i class="fas fa-download"></i> Download</button>
+        </div>
+      </div>
+
+      <div class="download-item" data-aos="fade-right" data-aos-delay="200">
+        <div class="download-info">
+          <i class="fas fa-gamepad"></i>
+          <div>
+            <h3>Controller Macro Pack</h3>
+            <p>Pre-made macros for popular games</p>
+            <span class="version">2025 Edition · 15 MB</span>
+          </div>
+        </div>
+        <div class="download-actions">
+          <button class="download-btn"><i class="fas fa-download"></i> Download</button>
+        </div>
+      </div>
+
+      <div class="download-item" data-aos="fade-right" data-aos-delay="300">
+        <div class="download-info">
+          <i class="fas fa-headphones"></i>
+          <div>
+            <h3>3D Audio Profiles</h3>
+            <p>Optimized audio profiles for FPS games</p>
+            <span class="version">Collection 4 · 250 MB</span>
+          </div>
+        </div>
+        <div class="download-actions">
+          <button class="download-btn"><i class="fas fa-download"></i> Download</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>NEBULA GEAR</h4>
+        <p>Download premium gaming gear.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NEBULA GEAR. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
