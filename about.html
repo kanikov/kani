@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · NEBULA GEAR</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    .about-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      margin: 3rem 0;
+    }
+    
+    .about-content h2 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    
+    .team-member {
+      text-align: center;
+      padding: 2rem;
+      background: var(--glass);
+      border-radius: 20px;
+      border: 1px solid var(--glass-border);
+      transition: var(--transition);
+    }
+    
+    .team-member:hover {
+      transform: translateY(-10px);
+      border-color: var(--primary);
+    }
+    
+    .team-member i {
+      font-size: 4rem;
+      color: var(--primary);
+      margin-bottom: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+      .about-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-gamepad"></i>
+        <span>NEBULA GEAR</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="about-section">
+      <div class="about-content" data-aos="fade-right">
+        <h2 class="gradient-text">About Nebula Gear</h2>
+        <p style="font-size: 1.2rem; margin-bottom: 1.5rem;">We're passionate gamers creating premium accessories and mods for the community.</p>
+        <p>Founded in 2024, Nebula Gear has grown from a small modding community to a comprehensive platform for gaming enhancements. Our mission is to provide high-quality, accessible gaming gear that elevates every player's experience.</p>
+        <div class="hero-stats" style="margin-top: 2rem; justify-content: flex-start;">
+          <div class="stat-item">
+            <div class="stat-number" data-value="150">0</div>
+            <div class="stat-label">Mods Created</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-value="50">0</div>
+            <div class="stat-label">Countries</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="game-controller" style="height: 300px;">
+          <i class="fas fa-users" style="font-size: 6rem;"></i>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" data-aos="fade-up">Meet the Team</h2>
+    <div class="team-grid">
+      <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-user-astronaut"></i>
+        <h3>Alex Chen</h3>
+        <p style="color: var(--secondary);">Founder & Lead Dev</p>
+        <p>10+ years gaming industry</p>
+      </div>
+      <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+        <i class="fas fa-user-ninja"></i>
+        <h3>Sarah Johnson</h3>
+        <p style="color: var(--secondary);">Mod Designer</p>
+        <p>Visual effects specialist</p>
+      </div>
+      <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+        <i class="fas fa-user-secret"></i>
+        <h3>Mike Ross</h3>
+        <p style="color: var(--secondary);">Community Lead</p>
+        <p>Esports veteran</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>NEBULA GEAR</h4>
+        <p>Gaming accessories for everyone.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NEBULA GEAR. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
