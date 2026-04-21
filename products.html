@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products · NEBULA GEAR</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <style>
+    .filter-bar {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+      padding: 0.8rem 1.5rem;
+      background: var(--glass);
+      border: 1px solid var(--glass-border);
+      border-radius: 30px;
+      color: var(--light);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .filter-btn:hover,
+    .filter-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      box-shadow: var(--glow);
+    }
+    
+    .products-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    
+    .products-header h1 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-gamepad"></i>
+        <span>NEBULA GEAR</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active">Products</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="products-header" data-aos="fade-down">
+      <h1 class="gradient-text">All Gaming Gear</h1>
+      <p>Browse our complete collection of premium gaming accessories and mods</p>
+    </div>
+
+    <div class="filter-bar" data-aos="fade-up">
+      <button class="filter-btn active">All</button>
+      <button class="filter-btn">Mice</button>
+      <button class="filter-btn">Keyboards</button>
+      <button class="filter-btn">Headsets</button>
+      <button class="filter-btn">Mods</button>
+      <button class="filter-btn">Software</button>
+    </div>
+
+    <div class="products-grid">
+      <!-- Extended product list -->
+      <div class="product-card" data-aos="fade-up">
+        <div class="product-icon"><i class="fas fa-mouse"></i></div>
+        <h3>Nebula X1 Mouse</h3>
+        <p>26K DPI · 8 Programmable Buttons · RGB</p>
+        <div class="product-meta">
+          <span class="price">$89.99</span>
+          <button class="download-btn"><i class="fas fa-download"></i> Get</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="product-icon"><i class="fas fa-keyboard"></i></div>
+        <h3>Vortex K70</h3>
+        <p>Mechanical · Hot-swappable · RGB</p>
+        <div class="product-meta">
+          <span class="price">$149.99</span>
+          <button class="download-btn"><i class="fas fa-download"></i> Get</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="product-icon"><i class="fas fa-headphones"></i></div>
+        <h3>Quantum Audio</h3>
+        <p>7.1 Surround · Noise Cancelling</p>
+        <div class="product-meta">
+          <span class="price">$199.99</span>
+          <button class="download-btn"><i class="fas fa-download"></i> Get</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-aos="fade-up">
+        <div class="product-icon"><i class="fas fa-desktop"></i></div>
+        <h3>FPS Booster Pro</h3>
+        <p>Optimization tool for all games</p>
+        <div class="product-meta">
+          <span class="price">$29.99</span>
+          <button class="download-btn"><i class="fas fa-download"></i> Get</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="product-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>Shader Pack Ultimate</h3>
+        <p>50+ custom shaders for Minecraft</p>
+        <div class="product-meta">
+          <span class="price">$19.99</span>
+          <button class="download-btn"><i class="fas fa-download"></i> Get</button>
+        </div>
+      </div>
+      
+      <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="product-icon"><i class="fas fa-microphone"></i></div>
+        <h3>Stream Deck Mod</h3>
+        <p>Custom profiles for streamers</p>
+        <div class="product-meta">
+          <span class="price">$39.99</span>
+          <button class="download-btn"><i class="fas fa-download"></i> Get</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>NEBULA GEAR</h4>
+        <p>Premium gaming accessories for everyone.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NEBULA GEAR. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Filter functionality
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        // Add filter logic here
+      });
+    });
+  </script>
+</body>
+</html>
