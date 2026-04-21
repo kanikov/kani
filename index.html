@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download premium gaming accessories, mods, and gear. The ultimate gaming enhancement hub.">
+  <title>NEBULA GEAR · Premium Gaming Downloads</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="glass-nav">
+    <div class="nav-container">
+      <div class="logo">
+        <i class="fas fa-gamepad"></i>
+        <span>NEBULA GEAR</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="downloads.html">Downloads</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+      <button class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text" data-aos="fade-right">
+          <h1>
+            Level Up Your
+            <span class="gradient-text">Gaming Experience</span>
+          </h1>
+          <p>Download premium mods, accessories, and gaming enhancements. Join 50,000+ gamers who trust Nebula Gear for their setup.</p>
+          <div class="btn-group">
+            <a href="downloads.html" class="btn btn-primary">
+              <i class="fas fa-download"></i> Start Downloading
+            </a>
+            <a href="products.html" class="btn btn-outline">
+              <i class="fas fa-box"></i> Browse Gear
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-value="50000">0</div>
+              <div class="stat-label">Active Users</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-value="1200">0</div>
+              <div class="stat-label">Downloads</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-value="150">0</div>
+              <div class="stat-label">Mods Available</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" data-aos="fade-left">
+          <div class="game-controller">
+            <i class="fas fa-headset"></i>
+            <div class="floating-elements">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="container" id="featured">
+    <h2 class="section-title" data-aos="fade-up">🔥 Trending Downloads</h2>
+    <div class="products-grid">
+      <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="product-icon">
+          <i class="fas fa-mouse"></i>
+        </div>
+        <h3>Precision Gaming Mouse</h3>
+        <p>Ultra-lightweight, 26K DPI sensor, customizable RGB</p>
+        <div class="product-meta">
+          <span class="price">$79.99</span>
+          <button class="download-btn" onclick="addToCartAnimation('Precision Mouse')">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="product-icon">
+          <i class="fas fa-keyboard"></i>
+        </div>
+        <h3>Mechanical Keyboard Pack</h3>
+        <p>Custom keycaps, macros, and RGB profiles bundle</p>
+        <div class="product-meta">
+          <span class="price">$129.99</span>
+          <button class="download-btn" onclick="addToCartAnimation('Keyboard Pack')">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+      </div>
+
+      <div class="product-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="product-icon">
+          <i class="fas fa-headphones"></i>
+        </div>
+        <h3>3D Audio Enhancer</h3>
+        <p>Immersive spatial sound mod for any headset</p>
+        <div class="product-meta">
+          <span class="price">$49.99</span>
+          <button class="download-btn" onclick="addToCartAnimation('Audio Enhancer')">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Categories -->
+  <section class="container">
+    <div class="download-section" data-aos="fade-up">
+      <h2 class="section-title">📦 Download Categories</h2>
+      <div class="download-categories">
+        <div class="category-card">
+          <i class="fas fa-palette"></i>
+          <h3>Visual Mods</h3>
+          <p>Shaders, textures, and UI enhancements</p>
+          <p style="margin-top: 1rem; color: var(--secondary);">245+ items</p>
+        </div>
+        <div class="category-card">
+          <i class="fas fa-microchip"></i>
+          <h3>Performance Tools</h3>
+          <p>FPS boosters, optimizers, and tweaks</p>
+          <p style="margin-top: 1rem; color: var(--secondary);">128+ items</p>
+        </div>
+        <div class="category-card">
+          <i class="fas fa-volume-up"></i>
+          <h3>Audio Packs</h3>
+          <p>Sound mods, voice packs, and music</p>
+          <p style="margin-top: 1rem; color: var(--secondary);">312+ items</p>
+        </div>
+        <div class="category-card">
+          <i class="fas fa-cog"></i>
+          <h3>Accessories</h3>
+          <p>Macros, profiles, and custom configs</p>
+          <p style="margin-top: 1rem; color: var(--secondary);">189+ items</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>NEBULA GEAR</h4>
+        <p>Premium gaming accessories and downloads for the ultimate experience.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-discord"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-github"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Visual Mods</a></li>
+          <li><a href="#">Performance</a></li>
+          <li><a href="#">Audio Packs</a></li>
+          <li><a href="#">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Community</a></li>
+          <li><a href="#">Report Bug</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 NEBULA GEAR. All rights reserved. | Made with <i class="fas fa-heart" style="color: var(--accent);"></i> for gamers</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
